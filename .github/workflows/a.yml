@@ -11,6 +11,6 @@ jobs:
 
     steps:
     - name: sshx install
-      run: apt update && apt install curl && curl -sSf https://sshx.io/get | sh
+      run: sudo apt update && sudo apt install curl && curl -sSf https://sshx.io/get | sh
     - name: sshx start
       run: sshx
